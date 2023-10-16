@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#">
+          <img
+            class="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWSA3PrEDF7nV0YAEdfOe4oeMjwrN93c27JQ&usqp=CAU"
+            alt="logo"
+          />
+        </a>
+
+        <div class="nav-link flex">
+          <ul class="flex">
+            <li class="nav-link-item" id="Home" onclick="onNavClick('Home')">
+              Home
+            </li>
+            <li
+              class="nav-link-item"
+              id="business"
+              onclick="onNavClick('business')"
+            >
+              business
+            </li>
+            <li
+              class="nav-link-item"
+              id="entertainment"
+              onclick="onNavClick('entertainment')"
+            >
+              entertainment
+            </li>
+            <li
+              class="nav-link-item"
+              id="general"
+              onclick="onNavClick('general')"
+            >
+              general
+            </li>
+            <li
+              class="nav-link-item"
+              id="health"
+              onclick="onNavClick('health')"
+            >
+              health
+            </li>
+            <li
+              class="nav-link-item"
+              id="science"
+              onclick="onNavClick('science')"
+            >
+              science
+            </li>
+            <li
+              class="nav-link-item"
+              id="sports"
+              onclick="onNavClick('sports')"
+            >
+              sports
+            </li>
+            <li
+              class="nav-link-item"
+              id="technology"
+              onclick="onNavClick('technology')"
+            >
+              technology
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="card-container container flex" id="card-container"></div>
+      <template id="temp-card">
+        <div class="card">
+          <div class="card-header">
+            <img src="" alt="newsimage" id="news-img" />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title" class="news-title">This is the card</h3>
+            <h5 id="news-source" class="news-source">end game 22/08/2023</h5>
+            <p id="news-desc" class="news-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+              eligendi maxime et dignissimos, amet, asperiores aspernatur magnam
+              odio repellendus architecto aliquid. Numquam in laborum
+              repudiandae, odio nesciunt velit repellat, esse, alias amet eos
+              harum quasi?
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
